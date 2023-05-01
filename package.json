@@ -39,10 +39,17 @@
     ]
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@react-three/drei": "^9.66.1",
+    "@react-three/fiber": "^8.13.0",
     "@redux-devtools/extension": "^3.2.3",
     "express": "^4.17.2",
+    "framer-motion": "^10.12.4",
     "knex": "^2.3.0",
+    "maath": "^0.5.3",
     "pg": "^8.8.0",
+    "react-icons": "^4.8.0",
+    "react-parallax-tilt": "^1.7.131",
     "sqlite3": "^5.1.2",
     "superagent": "7.1.1"
   },
@@ -84,7 +91,7 @@
     "react": "^18.0.2",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.4",
-    "react-router-dom": "^6.4.2",
+    "react-router-dom": "^6.11.0",
     "redux": "^4.1.1",
     "redux-thunk": "^2.4.2",
     "style-loader": "^3.3.0",
