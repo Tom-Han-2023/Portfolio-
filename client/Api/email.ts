@@ -3,9 +3,12 @@ import { Form } from '../components/component/Contact'
 
 export async function sendEmail(form: Form) {
   try {
-    const response = await request.post('/v1/email').send(form)
-    return response.body
+    const response = await request.post('api/v1/email').send(form)
+    if (!response.ok) {
+      throw new Error('Failed to send email.')
+    }
   } catch (error) {
-    console.error('Error sending reminder email:', error)
+    console.error('Error sending email:', error)
+    throw error
   }
 }

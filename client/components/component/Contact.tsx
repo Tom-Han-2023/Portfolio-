@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import emailjs from '@emailjs/browser'
 import EarthCanvas from './Canvas/Earth'
 import { SectionWrapper } from '../../hoc'
 import { slideIn } from '../../utils/motion'
+import { sendEmail } from '../../Api/email'
 
 export interface Form {
   name: string
@@ -35,18 +35,7 @@ const Contact = () => {
     setLoading(true)
 
     try {
-      await emailjs.send(
-        'service_oduwwt7',
-        'template_4gcnupy',
-        {
-          from_name: form.name,
-          to_name: 'JavaScript Mastery',
-          from_email: form.email,
-          to_email: 'tom.han0528@gmail.com',
-          message: form.message,
-        },
-        'lrpkPiP9Euz_8hIDb'
-      )
+      await sendEmail(form)
       setLoading(false)
       alert('Thank you. I will get back to you as soon as possible.')
       setForm({ name: '', email: '', message: '' })
