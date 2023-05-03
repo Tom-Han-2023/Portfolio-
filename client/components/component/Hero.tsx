@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I&apos;m <span className="text-[#915EFF]">Tom</span>
           </h1>
           <p
-            className={`text-[14px] uppercase tracking-wider text-secondary sm:text-[18px]`}
+            className={`text-[14px] uppercase tracking-wider text-white sm:text-[18px]`}
           >
             I am a Full Stack Developer
           </p>
@@ -29,7 +29,7 @@ const Hero = () => {
       <MacCanvas />
 
       <div className="absolute bottom-32 flex w-full items-center justify-center xs:bottom-10">
-        <a href="#about">
+        <a href="#about" aria-label="Link to the about section">
           <div className="flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 border-secondary p-2">
             <motion.div
               animate={{

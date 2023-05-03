@@ -1,44 +1,47 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaHome } from 'react-icons/fa'
 import { ImProfile } from 'react-icons/im'
 import { BiMenu } from 'react-icons/bi'
 import { navLinks } from '../../constants'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
-  // const [scrolled, setScrolled] = useState(false)
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.scrollY
-  //     if (scrollTop > 100) {
-  //       setScrolled(true)
-  //     } else {
-  //       setScrolled(false)
-  //     }
-  //   }
-
-  //   window.addEventListener('scroll', handleScroll)
-
-  //   return () => window.removeEventListener('scroll', handleScroll)
-  // }, [])
 
   return (
     <nav className="fixed top-0 z-20 flex w-full items-center justify-between px-6 py-5 sm:px-16 ">
       <div className="mx-auto flex w-full max-w-7xl items-center">
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          onClick={() => {
+            setActive('')
+            window.scrollTo(0, 0)
+          }}
+          aria-label="Link to the Home page"
+        >
+          <div className="inline-block text-4xl">
+            <FaHome />
+          </div>
+        </Link>
+
         <a
           href="https://github.com/Tom-Han-2023"
           className="mx-3 inline-block text-4xl"
-          aria-label="github profile"
+          aria-label="Link to my GitHub profile"
+          target="_blank"
+          rel="noreferrer"
         >
           <FaLinkedin />
         </a>
         <a
           href="https://www.linkedin.com/in/soung-ouk-han/"
           className=" text-4xl"
-          aria-label="linkedin profile"
+          aria-label="Link to my Linkedin profile"
+          target="_blank"
+          rel="noreferrer"
         >
           <FaGithub />
         </a>
@@ -46,6 +49,7 @@ const Navbar = () => {
           href="./PDF/Tom-CV.pdf"
           download="Tom-CV.pdf"
           className=" mx-3 text-4xl"
+          aria-label="Link to download my CV"
         >
           <ImProfile />
         </a>

@@ -54,6 +54,7 @@ const About = () => {
             variants={fadeIn('left', '', 0.1, 1)}
             src="./Image/profile-pic.png"
             className="h-full w-full object-cover"
+            alt="profile-pic"
           />
         </div>
       </div>

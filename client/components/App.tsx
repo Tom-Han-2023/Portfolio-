@@ -1,8 +1,11 @@
 import { useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import About from './component/About'
+import StarsCanvas from './component/Canvas/Star'
+import Contact from './component/Contact'
 import Hero from './component/Hero'
 import Navbar from './component/Navbar'
+import Projects from './component/Projects'
 import Technology from './component/Technology'
 
 function App() {
@@ -19,10 +22,10 @@ function App() {
           <About />
           <Technology />
         </div>
-        {/* <Works /> */}
+        <Projects />
         <div className="relative z-0">
-          {/* <Contact /> */}
-          {/* <StarsCanvas /> */}
+          <Contact />
+          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
