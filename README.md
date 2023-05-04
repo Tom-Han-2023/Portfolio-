@@ -1,13 +1,13 @@
 
 
 
-#### **From the command line**
+##https://tom-portfolio.up.railway.app/ 
 
-```sh
+## Technologies Used
 
-npm install # to install dependencies
-npm run dev # to start the dev server
-```
-
-You can find the server running on [http://localhost:3000](http://localhost:3000).
-
+- React
+- TypeScript
+- EmailJs
+- Node.js
+- Express
+- ThreeJs
