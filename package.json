@@ -15,10 +15,9 @@
     "dev:server": "nodemon server/index.ts",
     "build": "run-p build:client build:server",
     "build:client": "npm run webpack -- --mode production",
-    "build:server": "npm run knex -- migrate:latest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "webpack": "webpack --config ./client/webpack.config.js",
-    "knex": "knex --knexfile ./server/db/knexfile.js"
+    
   },
   "babel": {
     "presets": [
@@ -42,13 +41,10 @@
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.66.1",
     "@react-three/fiber": "^8.13.0",
-    "@redux-devtools/extension": "^3.2.3",
     "dotenv": "^16.0.3",
     "express": "^4.17.2",
-    "framer-motion": "^10.12.4",
-    "knex": "^2.3.0",
+    "framer-motion": "^10.12.4",  
     "maath": "^0.5.3",
-    "pg": "^8.8.0",
     "react-icons": "^4.8.0",
     "react-parallax-tilt": "^1.7.131",
     "sqlite3": "^5.1.2",
