@@ -16,7 +16,7 @@
     "build": "run-p build:client build:server",
     "build:client": "npm run webpack -- --mode production",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "webpack": "webpack --config ./client/webpack.config.js",
+    "webpack": "webpack --config ./client/webpack.config.js"
     
   },
   "babel": {
