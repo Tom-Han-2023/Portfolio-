@@ -125,7 +125,7 @@ export const projects = [
       },
     ],
     image: './Image/Magical-Menagerie.png',
-    source_code_link: 'https://github.com/Tom-Han-2023/Budget-Buddy',
+    source_code_link: 'https://github.com/Tom-Han-2023/Magical-Menagerie',
   },
   {
     name: 'Kes Ke Say',
@@ -158,6 +158,6 @@ export const projects = [
       },
     ],
     image: './Image/Kes-ke-say.png',
-    source_code_link: 'https://github.com/Tom-Han-2023/Budget-Buddy',
+    source_code_link: 'https://github.com/Tom-Han-2023/Kes-Ke-Say',
   },
 ]
